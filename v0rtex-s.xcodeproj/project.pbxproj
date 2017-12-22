@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B514CC681FEC8691005F4E6B /* binCreation in Resources */ = {isa = PBXBuildFile; fileRef = B514CC671FEC8691005F4E6B /* binCreation */; };
 		B514CC6A1FEC92A5005F4E6B /* cydia.tar in Resources */ = {isa = PBXBuildFile; fileRef = B514CC691FEC92A5005F4E6B /* cydia.tar */; };
+		B514CC6C1FECCE37005F4E6B /* LISCENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = B514CC6B1FECCE37005F4E6B /* LISCENSE.md */; };
 		B544A5C61FEB2F3400AA5749 /* bootstrap.tar in Resources */ = {isa = PBXBuildFile; fileRef = B544A5C51FEB2F3400AA5749 /* bootstrap.tar */; };
 		B58B32401FE4EBA300EB7B47 /* kernel.m in Sources */ = {isa = PBXBuildFile; fileRef = B58B323D1FE4EBA300EB7B47 /* kernel.m */; };
 		B58B32461FE4ED6300EB7B47 /* symbols.m in Sources */ = {isa = PBXBuildFile; fileRef = B58B32451FE4ED6300EB7B47 /* symbols.m */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		B514CC671FEC8691005F4E6B /* binCreation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = binCreation; sourceTree = "<group>"; };
 		B514CC691FEC92A5005F4E6B /* cydia.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = cydia.tar; sourceTree = "<group>"; };
+		B514CC6B1FECCE37005F4E6B /* LISCENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LISCENSE.md; sourceTree = "<group>"; };
 		B544A5C51FEB2F3400AA5749 /* bootstrap.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = bootstrap.tar; sourceTree = "<group>"; };
 		B58B323D1FE4EBA300EB7B47 /* kernel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kernel.m; sourceTree = "<group>"; };
 		B58B323F1FE4EBA300EB7B47 /* kernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kernel.h; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		EE5252A01FDA4F2F00993801 = {
 			isa = PBXGroup;
 			children = (
+				B514CC6B1FECCE37005F4E6B /* LISCENSE.md */,
 				B5BB8F781FE4D97800B60FDC /* README.md */,
 				B514CC671FEC8691005F4E6B /* binCreation */,
 				EE5252AB1FDA4F2F00993801 /* v0rtex-S */,
@@ -223,6 +226,7 @@
 				B5E66A5A1FE824FD00C7530E /* tar in Resources */,
 				EE5252B61FDA4F2F00993801 /* Assets.xcassets in Resources */,
 				B5BB8F791FE4D97800B60FDC /* README.md in Resources */,
+				B514CC6C1FECCE37005F4E6B /* LISCENSE.md in Resources */,
 				EE5252B41FDA4F2F00993801 /* Main.storyboard in Resources */,
 				B544A5C61FEB2F3400AA5749 /* bootstrap.tar in Resources */,
 				B58B325C1FE525A300EB7B47 /* dropbear.plist in Resources */,
