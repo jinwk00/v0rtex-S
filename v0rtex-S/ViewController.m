@@ -181,12 +181,16 @@ kptr_t self_proc;
     }
     
     {
+        // remove the old Cydia
+        [fileMgr removeItemAtPath:@"/Applications/Cydia.app/Cydia" error:nil];
+        [fileMgr removeItemAtPath:@"/Applications/Cydia.app" error:nil];
+        
         // extract cydia
         execprog(0, "/v0rtex/tar", (const char **)&(const char*[]){ "/v0rtex/tar", "-xf", "/v0rtex/cydia.tar", "-C", "/Applications", NULL });
         
         // give perms
-        chmod("/Applications/Cydia.app", 0755);
-        chmod("/Applications/Cydia.app/Cydia", 0755);
+        chmod("/Applications/Cydia.app", 0777);
+        chmod("/Applications/Cydia.app/Cydia", 0777);
         
         // sign it
         inject_trust("/Applications/Cydia.app/Cydia");
@@ -211,7 +215,6 @@ kptr_t self_proc;
         }
         
         // Launch dropbear
-        NSLog(@"MAKE SURE TO FIRST RUN 'export PATH=$PATH:/v0rtex/bins' WHEN FIRST CONNECTING TO SSH");
         execprog(kern_ucred, "/v0rtex/dropbear", (const char**)&(const char*[]){
             "/v0rtex/dropbear", "-R", "-E", "-m", "-S", "/", NULL
         });
