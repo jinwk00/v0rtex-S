@@ -130,6 +130,8 @@ kptr_t self_proc;
         [fileMgr removeItemAtPath:@"/v0rtex/tar" error:nil];
         [fileMgr removeItemAtPath:@"/bin/sh" error:nil];
         
+        [fileMgr removeItemAtPath:@"/v0rtex/cydia.tar" error:nil];
+        
         // copy in all our bins
         NSLog(@"copying bins...");
         [fileMgr copyItemAtPath:[bundlePath stringByAppendingString:@"/bootstrap.tar"]
