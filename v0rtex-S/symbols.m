@@ -66,7 +66,7 @@ BOOL init_symbols()
         }
     }
     
-    else if (strcmp(u.machine, "iPhone8,1"))
+    else if (strcmp(u.machine, "iPhone8,1") == 0)
     {
         if ([ver isEqual: @"Version 10.3.2 (Build 14F89)"])
         {
