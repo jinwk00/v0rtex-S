@@ -189,6 +189,9 @@ kptr_t self_proc;
         // sign it
         inject_trust("/Applications/Cydia.app/Cydia");
     
+        // no stash
+        close(creat("/.cydia_no_stash", 0644));
+        
         execprog(0, "/v0rtex/bins/uicache", NULL);
         
         [self writeText:@"extracted cydia and ran uicache... good luck"];
