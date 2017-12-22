@@ -200,6 +200,16 @@ kptr_t self_proc;
     }
     
     {
+        // create .profile files
+        if (![fileMgr fileExistsAtPath:@"/var/mobile/.profile"])
+        {
+            [fileMgr createFileAtPath:@"/var/mobile/.profile" contents:[[NSString stringWithFormat:@"export PATH=$PATH:/v0rtex/bins"] dataUsingEncoding:NSASCIIStringEncoding] attributes:nil];
+        }
+        if (![fileMgr fileExistsAtPath:@"/var/root/.profile"])
+        {
+            [fileMgr createFileAtPath:@"/var/root/.profile" contents:[[NSString stringWithFormat:@"export PATH=$PATH:/v0rtex/bins"] dataUsingEncoding:NSASCIIStringEncoding] attributes:nil];
+        }
+        
         // Launch dropbear
         NSLog(@"MAKE SURE TO FIRST RUN 'export PATH=$PATH:/v0rtex/bins' WHEN FIRST CONNECTING TO SSH");
         execprog(kern_ucred, "/v0rtex/dropbear", (const char**)&(const char*[]){

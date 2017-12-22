@@ -45,8 +45,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmQ-kM-PGs">
-                                <rect key="frame" x="22" y="331" width="331" height="41"/>
+                                <rect key="frame" x="22" y="315" width="331" height="64"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Sqq-Sv-80k"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="run sploit">
@@ -66,13 +69,12 @@
                             <constraint firstItem="4oM-Jp-MHu" firstAttribute="top" secondItem="aM9-Bk-Qsl" secondAttribute="bottom" constant="9" id="M9Z-7o-Euy"/>
                             <constraint firstItem="FJr-Jm-0Qu" firstAttribute="centerX" secondItem="aM9-Bk-Qsl" secondAttribute="centerX" id="OVC-TI-dLK"/>
                             <constraint firstItem="aM9-Bk-Qsl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="PSk-9y-F3v"/>
+                            <constraint firstItem="pmQ-kM-PGs" firstAttribute="trailing" secondItem="4oM-Jp-MHu" secondAttribute="trailing" id="S2L-bf-Heq"/>
+                            <constraint firstItem="FJr-Jm-0Qu" firstAttribute="top" secondItem="pmQ-kM-PGs" secondAttribute="bottom" constant="8" symbolic="YES" id="UsE-D2-xa0"/>
                             <constraint firstItem="4oM-Jp-MHu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="WAe-OV-DDF"/>
-                            <constraint firstItem="FJr-Jm-0Qu" firstAttribute="centerX" secondItem="pmQ-kM-PGs" secondAttribute="centerX" id="WwV-yL-VBz"/>
                             <constraint firstItem="aM9-Bk-Qsl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="30" id="dLE-uh-Brc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aM9-Bk-Qsl" secondAttribute="trailing" constant="6" id="hG9-T4-lvp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pmQ-kM-PGs" secondAttribute="trailing" constant="6" id="oGu-RC-4QX"/>
-                            <constraint firstItem="pmQ-kM-PGs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="qHC-Na-cCH"/>
-                            <constraint firstItem="FJr-Jm-0Qu" firstAttribute="top" secondItem="pmQ-kM-PGs" secondAttribute="bottom" constant="15" id="zh3-qN-RUV"/>
+                            <constraint firstItem="pmQ-kM-PGs" firstAttribute="leading" secondItem="4oM-Jp-MHu" secondAttribute="leading" id="yfh-ax-Rhs"/>
                         </constraints>
                     </view>
                     <connections>
