@@ -8,7 +8,10 @@ Currently, we have:
  - AMFI/codesigning patch, hence the ability to run unsigned code
  - SSH access (with included binaries)
 
-Fat creds to stek on the r/w stuff, and originally xerub too. 
+Fat creds to stek on the r/w and amfi stuff, and originally xerub too.
+
+Thanks to EthanRDoesMC for the logo, Sigzua for the exploit, xerub for libjb, and cheesecakeufo for help with entitlements.
+Please let me know if you believe I have used your work without appropriate creditation; I will ensure to fix it immediately. 
 
 ### Offsets
 
